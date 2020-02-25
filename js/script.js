@@ -14,6 +14,6 @@ $("#search").click(function(){
         })
         .then(function(data) {
             console.log(data);
+            $("#results").append("<img src =" + data.data[Math.floor(Math.random()*25)].images.original.url + ">");
         });
-        
 });
